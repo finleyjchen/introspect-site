@@ -1,0 +1,15 @@
+/* breakpoints for media queries */
+$narrow: 480px;
+$mid: 768px;
+$wide: 1000px;
+
+@mixin tablet {
+    @media (min-width: $mid) { @content; }
+}
+@mixin desktop {
+    @media (min-width: $wide) { @content; }
+}
+
+
+$page-color:#E3E1DC;
+$text-color: #2D2A29;
