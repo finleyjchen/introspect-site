@@ -9,4 +9,5 @@ Images are screenshots of sample websites that the company would probably be mak
 ### Technologies Used
 - SASS compiled using the live sass compiler extension on VS Code
 - [flickity](https://github.com/metafizzy/flickity) for the project image slider
-- 
+- Eric Meyer's [CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
+- Suisse Int'l Typeface
