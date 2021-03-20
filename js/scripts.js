@@ -1,6 +1,5 @@
-var elem = document.querySelector('.carousel');
-var flkty = new Flickity( elem, {
-  // options
+var elem = document.querySelector(".carousel");
+var flkty = new Flickity(elem, {
   fade: true,
-  imagesLoaded: true
+  imagesLoaded: true,
 });
