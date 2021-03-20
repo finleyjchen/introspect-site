@@ -54,7 +54,7 @@ table {
 
 @font-face {
   font-family: 'Suisse Intl';
-  src: url("../fonts/SuisseIntl-Regular-WebS.woff") format("woff"), url("../fonts/SuisseIntl-Regular-WebS.woff2") format("woff2");
+  src: url("../fonts/SuisseIntl-Book-WebS.woff") format("woff"), url("../fonts/SuisseIntl-Book-WebS.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -255,13 +255,13 @@ body {
 
 @media (min-width: 768px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 @media (min-width: 1000px) {
   body {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -269,6 +269,7 @@ main {
   display: -ms-grid;
   display: grid;
   min-height: 180vh;
+  overflow: hidden;
 }
 
 main.brochure {
@@ -305,21 +306,38 @@ main > *:nth-child(3n + 1) {
 h1 {
   font-size: 3em;
   font-weight: 600;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 600;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 
 a {
   color: #2D2A29;
+  text-decoration: none;
 }
 
 a:hover {
-  font-weight: 600;
+  border-bottom: 1px solid #2D2A29;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75em;
+  color: rgba(227, 225, 220, 0.75);
 }
 
 .header {
@@ -334,8 +352,14 @@ a:hover {
 }
 
 .header .logo img {
-  max-height: 3em;
+  max-height: 2.5em;
   width: auto;
+}
+
+@media (min-width: 768px) {
+  .header .logo img {
+    max-height: 3em;
+  }
 }
 
 .header .menu {
@@ -384,6 +408,12 @@ a:hover {
           justify-content: space-between;
 }
 
+@media (min-width: 1000px) {
+  .services > div {
+    max-width: 75%;
+  }
+}
+
 .services .services-list {
   list-style: none;
   padding: 0;
@@ -410,13 +440,12 @@ a:hover {
 
 .about .carousel {
   width: 100%;
-  padding: 2em;
 }
 
 .about .carousel-cell {
   color: #E3E1DC;
   width: 100%;
-  height: 100%;
+  height: 20em;
   margin-right: 10px;
   /* center images in cells with flexbox */
   display: -webkit-box;
@@ -434,6 +463,12 @@ a:hover {
           justify-content: center;
 }
 
+@media (min-width: 1000px) {
+  .about .carousel-cell {
+    height: 90%;
+  }
+}
+
 .about .carousel-cell h3 {
   padding: 1em;
 }
@@ -445,5 +480,31 @@ a:hover {
 .carousel-cell-image {
   display: block;
   max-height: 100%;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
+  padding: 1em;
+  position: relative;
+}
+
+.contact img {
+  position: absolute;
+  width: 50%;
+  bottom: -3em;
+  left: -3em;
 }
 /*# sourceMappingURL=style.css.map */
